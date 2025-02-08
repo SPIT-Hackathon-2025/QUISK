@@ -1,4 +1,4 @@
-import Property from "../models/propertySchema";
+import Property from "../models/propertySchema.js";
 
 const getLeaserProperties = async (req, res) => {
   try {

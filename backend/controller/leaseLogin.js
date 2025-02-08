@@ -1,4 +1,4 @@
-import Leaser from "../models/Leaser.js";
+import Leaser from "../models/leaserSchema.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
