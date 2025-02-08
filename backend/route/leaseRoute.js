@@ -3,10 +3,10 @@ const router = Router();
 
 // Import Controllers
 import leaserSignup from "../controller/leaseSignup";
-
+import { leaserLogin } from "../controller/leaseLogin";
 // Lease Routes
 router.post("/signup", leaserSignup);
-router.post("/login", leaseLogin);
+router.post("/login", leaserLogin);
 // router.post("/signup", leaseSignup);
 
 
