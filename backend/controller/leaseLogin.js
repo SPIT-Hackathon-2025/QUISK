@@ -32,7 +32,7 @@ const leaserLogin = async (req, res) => {
     res.status(200).json({
       message: "Login successful",
       token,
-      leaser: { id: leaser._id, email: leaser.email, phone: leaser.phone },
+      leaser: { id: leaser._id,  phone: leaser.phone },
     });
 
   } catch (error) {
