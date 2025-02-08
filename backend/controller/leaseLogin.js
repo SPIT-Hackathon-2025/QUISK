@@ -2,7 +2,7 @@ import Leaser from "../models/Leaser.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-export const leaserLogin = async (req, res) => {
+const leaserLogin = async (req, res) => {
   try {
     const { phone, password } = req.body;
 
@@ -40,3 +40,5 @@ export const leaserLogin = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
+
+export default leaserLogin;

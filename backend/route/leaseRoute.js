@@ -1,14 +1,15 @@
 import { Router } from "express";
 const router = Router();
 
-// Import Controllers
+// Controllers
 import leaserSignup from "../controller/leaseSignup";
-import { leaserLogin } from "../controller/leaseLogin";
+import leaserLogin  from "../controller/leaseLogin";
+import listProperty from "../controller/listProperty";
+
 // Lease Routes
 router.post("/signup", leaserSignup);
 router.post("/login", leaserLogin);
-// router.post("/signup", leaseSignup);
-
+router.post("/list",listProperty);
 
 
 export default router;
