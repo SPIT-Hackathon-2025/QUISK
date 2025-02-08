@@ -5,9 +5,9 @@ import connectDb from './db/connectDb.js';
 dotenv.config();
 const app = express(); 
 app.use(express.json());
-// import leaseRouter from './routes/leaseRouter.js';
+import leaseRouter from "./route/leaseRoute.js";
 // import rentRouter from './routes/rentRouter.js';
-// app.use('/lease',leaseRouter);
+app.use('/lease',leaseRouter);
 // app.use('/rent',rentRouter);
  app.use(cors()); 
  
