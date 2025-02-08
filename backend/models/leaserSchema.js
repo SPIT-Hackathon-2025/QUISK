@@ -30,6 +30,10 @@ const leaserSchema = new mongoose.Schema({
     required: true,
     minlength: 6, 
   },
+  properties: {
+    type: Array,   
+    default: [], //_id store karega property tables ka .
+  },
 }, { timestamps: true }); 
 const Leaser = mongoose.model("Leaser",leaserSchema);
 export default Leaser;
